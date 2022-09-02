@@ -1,0 +1,39 @@
+ALGORITHM First Task
+VAR
+    S : STRING[];
+    i,j,k: INTEGER = 0;
+    ch:CHAR;
+    
+BEGIN
+
+     
+   
+   WHILE ( S[i]!= "." ) 
+
+   DO
+  
+        print("Give the character :");
+   read(S[i]);
+
+   i=i+1;
+        
+    END_WHILE
+   
+  
+    WHILE (i < S.length) DO
+        ch = S[i]
+         
+               if (ch == " " || ch == ".")
+            j =j+1;
+             
+     
+        if(ch == "a" || ch == "e" ||
+           ch == "i" || ch == "o"  || ch == "u"|| ch == "y"||  ch == "A" || ch == "E" || ch == "I" || ch == "O" 
+           || ch == "U" || ch == "Y")
+            k = k + 1 ;
+
+    END_WHILE 
+       
+            print("The number of words in the sentence is ", j);
+            print("The number of vowels in the sentence is ", k);
+END
